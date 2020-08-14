@@ -1,0 +1,95 @@
+
+window.history.forward();
+function noBack()
+{
+        window.history.forward();
+}
+
+function nameToUpperCase(ele)
+{
+	if (!ele)
+	{
+		return;
+	}
+
+	ele.value = ("" + ele.value).toUpperCase();
+}
+
+function disableEnterKey(e)
+{
+     var key;
+
+     if(window.event)
+          key = window.event.keyCode;     
+     else
+          key = e.which;     
+
+     if(key == 13)
+          return false;
+     else
+          return true;
+}
+
+
+function loadSelectBoxForExamCity1CountryWise(selector, options)
+{
+	$.each(options, function(stateName, stateCities){
+	//	var optGroup = $('<optgroup label="' + stateName + '">');
+		$.each(stateCities, function(cityCode, cityName){
+			$('<option value="' + cityCode + '">' + cityName + '</option>').appendTo(selector);
+		});
+//		$(optGroup).appendTo(selector);
+		$(selector).focus();
+	});
+}
+
+function loadSelectBoxForExamCity2(selector, options)
+{
+	$.each(options, function(stateName, stateCities){
+		var optGroup = $('<optgroup label="' + stateName + '">');
+		$.each(stateCities, function(cityCode, cityName){
+			$('<option value="' + cityCode + '">' + cityName + '</option>').appendTo(optGroup);
+		});
+		$(optGroup).appendTo(selector);
+		$(selector).focus();
+	});
+}
+
+function loadSelectBox(selector, options)
+{
+	$(selector).selectpicker();
+	$.each(options, function(key, value){
+		//console.log(typeof(value));
+		$('<option data-tokens="'+value+'" value="' + key + '">' + value + '</option>').appendTo(selector);
+	/*	$(selector).append('<option data-tokens="'+value+'" value="' + key + '">' + value + '</option>');*/
+		$(selector).focus();
+	});
+	$(selector).selectpicker('refresh');
+}
+
+function loadSelectBoxNew(selector, options)
+{
+	$(selector).selectpicker();
+	$.each(options, function(key, value){
+		//console.log(typeof(value));
+		$('<option data-tokens="'+value[1]+'" value="' + value[0] + '">' + value[1] + '</option>').appendTo(selector);
+	/*	$(selector).append('<option data-tokens="'+value+'" value="' + key + '">' + value + '</option>');*/
+		$(selector).focus();
+	});
+	$(selector).selectpicker('refresh');
+}
+
+function toggleDlAdmitCardBtn()
+{
+	var acceptToBringCalculator = $('#acceptToBringCalculator:checked').val();
+	var acceptScheduledStart = $('#acceptScheduledStart:checked').val();
+	
+	if((acceptScheduledStart && acceptScheduledStart == 'true') && ((acceptToBringCalculator && acceptToBringCalculator == 'true')))
+	{
+		$('#dlAdmitCardBtn').prop("disabled", false);
+	}
+	else
+	{
+		$('#dlAdmitCardBtn').prop("disabled", "disabled");
+	}
+}
