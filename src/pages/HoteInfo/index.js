@@ -29,6 +29,8 @@ export function HotelInfo() {
           {/* <h4 className="loc">Address : {"location: ",docs.location.address}</h4> */}
           <h4 className="cost">Average Cost: {"Average Cost :  ",docs.average_cost_for_two}(per 2)</h4>
           <h4 className="time"> Time: {"Timing :  ",docs.timings}</h4>
+          <h4 className="time"> Time: {"Timing :  ",docs.timings}</h4>
+          
       </div>
 
       <div class="sidenav">

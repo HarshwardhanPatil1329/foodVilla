@@ -34,3 +34,28 @@ right:100px;
 .slidebar {
     border: 2px soldid black;
 } */
+
+
+.sliderimg{
+  width: 300px;
+  height: 150px;
+  object-fit: initial;
+  position: fixed;
+  /* left: 40%; */
+  box-sizing: border-box
+}
+ItemsCarousel{
+    /* left: 20px;
+    width: 150px; */
+    height:200px;
+    border: 2px solid black;
+}
+.b1{
+    border-radius: 25px;
+    border: 2px solid  black;
+    width: 100px;
+    height: 30px;
+    background-color:  #dd9d39;
+    border-color: #dd9d39;
+    font-size: 18px;
+  }
