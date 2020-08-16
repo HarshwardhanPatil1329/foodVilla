@@ -4,14 +4,7 @@ import { getNameFromZomato } from "../../services/zomato.service";
 import style from "../../components/SearchForm/SearchForm.module.css";
 import NavBar from "../../components/Navbar";
 import  "./search.css";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import img1 from "./images/sw1.jpeg";
-import img2 from "./images/sw2.jpeg";
-import AwesomeSlider from 'react-awesome-slider';
-import AliceCarousel from 'react-alice-carousel';
-import "react-alice-carousel/lib/alice-carousel.css";
+
 import ItemsCarousel from 'react-items-carousel';
 
 export function SearchResults() {

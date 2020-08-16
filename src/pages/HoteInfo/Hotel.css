@@ -70,3 +70,12 @@
     .sidenav a {font-size: 18px;}
   }
 
+  /* list section */
+
+  Link {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
