@@ -51,7 +51,7 @@ export function HotelInfo() {
             
             return (
               <Link
-              to={`/payment/${docs.id}`}
+              to={`/payment`}
               className={style.ListLink}
               
               >

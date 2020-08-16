@@ -6,6 +6,7 @@ import { UserLocationContext } from "./context/user-location";
 import { HotelInfo } from "./pages/HoteInfo";
 import harshImage from "./harshFood.jpg";
 import { SearchResults } from "./pages/SearchResults";
+import {Payment} from "./pages/Payment";
 
 function App() {
   const [userLocation, setUserLocation] = useState({});
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route path="/hotel/:id">
             <HotelInfo />
+          </Route>
+          <Route path="/payment">
+            <Payment/>
           </Route>
         </Switch>
       </Router>
