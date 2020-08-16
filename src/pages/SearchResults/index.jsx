@@ -51,8 +51,8 @@ export function SearchResults() {
         // showSlither={true}
         gutter={20}
         belowchevron
-        leftChevron={<button className="b1">{'<'}</button>}
-        rightChevron={<button className="b1">{'>'}</button>}
+        leftChevron={<button className="b3">{'<'}</button>}
+        rightChevron={<button className="b3">{'>'}</button>}
         
         chevronWidth={chevronWidth}
         

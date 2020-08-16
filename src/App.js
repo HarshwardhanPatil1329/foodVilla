@@ -10,23 +10,9 @@ import {Payment} from "./pages/Payment";
 
 function App() {
   const [userLocation, setUserLocation] = useState({});
-  // useEffect(() => {
-  //   window.navigator.geolocation.getCurrentPosition(
-  //     (success) => {
-  //       setUserLocation(success.coords);
-  //     },
-  //     (error) => {
-  //       alert("Allow location to continue");
-  //     }
-  //   );
-  // }, []);
-
-  // if (!userLocation) {
-  //   return <>Getting user location...</>;
-  // }
 
   return (
-    // <UserLocationContext.Provider value={userLocation}>
+    
       <Router>
         <Switch>
           <Route path="/" exact>
@@ -46,12 +32,12 @@ function App() {
           <Route path="/hotel/:id">
             <HotelInfo />
           </Route>
-          <Route path="/payment">
+           <Route path="/payment">
             <Payment/>
-          </Route>
+          </Route> 
         </Switch>
       </Router>
-    // </UserLocationContext.Provider>
+    
   );
 }
 

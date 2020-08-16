@@ -1,22 +1,12 @@
 import React, { useEffect, useState } from "react";
-
-import NavBar from "../../components/Navbar/index";
-import "./FontAwesomeIcons/FontAwesome";
-import "./Tabs/Tabs";
-import Tabs from "./Tabs/Tabs";
-
-
+import NavBar from "../../components/Navbar";
 
 
 export function Payment() {
-    
-
     return(
         <>
-         <NavBar/> 
-        <div>
-            <Tabs/>
-        </div>
+        <NavBar/>
+        
         </>
     );
 
