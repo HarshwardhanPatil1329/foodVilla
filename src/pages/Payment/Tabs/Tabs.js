@@ -69,10 +69,10 @@ class Tabs extends React.Component {
               </li>
             </ul>
           </div>
-          <div className="content">
+          {/* <div className="content">
             <Route path="/HomeDelivery/HomeDelivery" component={HomeDelivery} />
             <Route path="/CreditCard/CreditCard" component={CreditCard} />
-          </div>
+          </div> */}
         </div>
       </Router>
     );

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getHotelInfoFromId } from "../../services/zomato.service";
 import NavBar from "../../components/Navbar";
-// import data from "./data.json"
 import "./Hotel.css"
 import {Data} from "./Demo3"; 
 import style from "../../components/SearchForm/SearchForm.module.css";
@@ -50,11 +49,7 @@ export function HotelInfo() {
           Data.map((experience, i) => {
             
             return (
-              <Link
-              to={`/payment`}
-              className={style.ListLink}
-              
-              >
+             
                 
               
                 <div className={style.ListItem}>
@@ -68,8 +63,14 @@ export function HotelInfo() {
                       ({experience.Info})
                       </span></b>
                       </div>
+                      <Link
+                             to={`/payment`}
+                            className={style.ListLink}
+                      >
+                      <button className="b4">Order!!!</button>
+                      </Link>
                 </div>
-                </Link>
+               
              
                );
               })

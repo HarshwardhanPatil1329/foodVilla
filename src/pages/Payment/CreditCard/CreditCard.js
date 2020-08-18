@@ -1,5 +1,6 @@
 import React from "react";
 import "../CreditCard/CreditCard.css";
+import {  useLocation, Link } from "react-router-dom";
 class CreditCard extends React.Component {
   render() {
     return (
@@ -10,8 +11,12 @@ class CreditCard extends React.Component {
             <p className="number">4854-xxxxxxxx-2199</p>
             <p>DEBIT CARD | VALID TILL 7/24</p>
             <div>
-              <input placeholder="CCV"></input>
-              <button className="buttonCard">PAY 216</button>
+              <input className="inputs" placeholder="CCV"></input>
+              <Link
+                             to={`/summary`}
+                            // className={style.ListLink}
+                      >
+              <button className="buttonCard">PAY 216</button></Link>
             </div>
           </div>
         </div>
@@ -20,8 +25,12 @@ class CreditCard extends React.Component {
             <p className="number">4854-xxxxxxxx-2199</p>
             <p>DEBIT CARD | VALID TILL 7/24</p>
             <div>
-              <input placeholder="CCV"></input>
-              <button className="buttonCard">PAY 216</button>
+              <input className="inputs" placeholder="CCV"></input>
+              <Link
+                             to={`/summary`}
+                            // className={style.ListLink}
+                      >
+              <button className="buttonCard">PAY 216</button></Link>
             </div>
           </div>
         </div>
