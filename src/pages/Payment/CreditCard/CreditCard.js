@@ -13,9 +13,8 @@ class CreditCard extends React.Component {
             <div>
               <input className="inputs" placeholder="CCV"></input>
               <Link
-                             to={`/summary`}
-                            // className={style.ListLink}
-                      >
+              to={`/summary`}
+          >
               <button className="buttonCard">PAY 216</button></Link>
             </div>
           </div>
@@ -27,9 +26,8 @@ class CreditCard extends React.Component {
             <div>
               <input className="inputs" placeholder="CCV"></input>
               <Link
-                             to={`/summary`}
-                            // className={style.ListLink}
-                      >
+              to={`/summary`}
+          >
               <button className="buttonCard">PAY 216</button></Link>
             </div>
           </div>

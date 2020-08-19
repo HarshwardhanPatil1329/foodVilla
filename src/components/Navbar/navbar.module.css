@@ -43,7 +43,7 @@
   text-decoration: none;
   font-size: 20px;
 } 
-.b2, .b1{
+ .b1{
   border-radius: 25px;
   border: 2px solid  black;
   width: 100px;
@@ -51,4 +51,17 @@
   background-color:  #dd9d39;
   border-color: #dd9d39;
   font-size: 18px;
+  text-decoration:none;
+  color: black;
+}
+.b2{
+  border-radius: 25px;
+  border: 2px solid  black;
+  width: 150px;
+  height: 30px;
+  background-color:  #dd9d39;
+  border-color: #dd9d39;
+  font-size: 18px;
+  text-decoration:none;
+  color: black;
 }

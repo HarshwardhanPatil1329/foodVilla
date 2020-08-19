@@ -8,10 +8,10 @@ class HomeDelivery extends React.Component {
         <div className="card">
           <h3>Home Delivery</h3>
           <Link
-                             to={`/summary`}
-                            // className={style.ListLink}
-                      >
-          <button id="button">PAY 216</button></Link>
+              to={`/summary`}
+          >
+          <button id="button">PAY 216</button>
+          </Link>
         </div>
       </div>
     );

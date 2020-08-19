@@ -1,3 +1,39 @@
+/* .slides.slick-prev,
+.slides.slick-next{
+position: fixed;
+top:50%;
+z-index:1;
+
+}
+
+.slides{
+position: fixed;
+border: 1px solid black;
+
+}
+
+.slides.slick-prev,
+.slides.slick.next{
+position: fixed;
+top:50%;
+z-index:1;
+}
+
+.slides.slick-prev{
+left:100px;
+}
+
+.slides.slick-next{
+right:100px;
+}
+.img{
+    width: 150px ;
+    height: 150px;
+    padding: 24px;
+}
+.slidebar {
+    border: 2px soldid black;
+} */
 
 
 .sliderimg{

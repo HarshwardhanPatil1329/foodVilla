@@ -3,16 +3,16 @@ import "../Tabs/Tabs.css";
 import HomeDelivery from "../HomeDelivery/HomeDelivery";
 import CreditCard from "../CreditCard/CreditCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { withRouter, BrowserRouter, Route, Link } from "react-router-dom";
 class Tabs extends React.Component {
   render() {
     return (
-      <Router>
+      
         <div className="container">
           <div className="sidebar">
             <ul className="background">
               <li className="linkList">
-                <Link to="/CreditCard/CreditCard" className="link">
+                <Link to="/payment/CreditCard" className="link">
                   <span>
                     <FontAwesomeIcon icon="credit-card" />
                   </span>
@@ -60,7 +60,7 @@ class Tabs extends React.Component {
                 </Link>
               </li>
               <li className="linkList">
-                <Link to="/HomeDelivery/HomeDelivery" className="link">
+                <Link to="/payment/HomeDelivery" className="link">
                   <span>
                     <FontAwesomeIcon icon="truck" />
                   </span>
@@ -69,13 +69,13 @@ class Tabs extends React.Component {
               </li>
             </ul>
           </div>
-          {/* <div className="content">
-            <Route path="/HomeDelivery/HomeDelivery" component={HomeDelivery} />
-            <Route path="/CreditCard/CreditCard" component={CreditCard} />
-          </div> */}
+          <div className="content">
+            <Route path="/payment/CreditCard" component={CreditCard} />
+            <Route path="/payment/HomeDelivery" component={HomeDelivery} />
+          </div>
         </div>
-      </Router>
+       
     );
   }
 }
-export default Tabs;
+export default withRouter(Tabs);

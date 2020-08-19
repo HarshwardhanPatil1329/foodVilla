@@ -10,6 +10,7 @@ import { Payment } from "./pages/Payment";
 import Tabs from "./pages/Payment/Tabs/Tabs";
 import {Summary} from "./pages/Summary";
 
+
 function App() {
   const [userLocation, setUserLocation] = useState({});
 
@@ -27,6 +28,7 @@ function App() {
             <HomePage />
           </div>
         </Route>
+        
         <Route path="/search">
           <SearchResults />
         </Route>

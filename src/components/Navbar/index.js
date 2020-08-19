@@ -18,11 +18,11 @@ export default function Index() {
         </a> */}
         <a href="" className={style.AppItem1}>
           {/*  */}
-            <button className={style.b1}>Sign Up</button>
+            <Link to="/Registration" className={style.b1}>Sign Up</Link>
         </a>
         <a href="" className={style.AppItem2}>
         {/* Sign Up */}
-        <button className={style.b2}>Login</button>
+        <Link to="/Login" className={style.b2}>Login</Link>
         </a>
       </nav>
     </>
