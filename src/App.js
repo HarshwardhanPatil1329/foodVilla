@@ -5,11 +5,13 @@ import { HomePage } from "./pages/HomePage";
 import { UserLocationContext } from "./context/user-location";
 import { HotelInfo } from "./pages/HoteInfo";
 import harshImage from "./harshFood.jpg";
+import log from "./log.jpeg"
 import { SearchResults } from "./pages/SearchResults";
 import { Payment } from "./pages/Payment";
 import Tabs from "./pages/Payment/Tabs/Tabs";
 import {Summary} from "./pages/Summary";
-
+import Login from "./components/LoginPage/LoginPage";
+import SignUp  from "./components/SignUpPage/SignUpPage";
 
 function App() {
   const [userLocation, setUserLocation] = useState({});
@@ -28,7 +30,29 @@ function App() {
             <HomePage />
           </div>
         </Route>
-        
+        <Route path="/LoginPage"  component={Login}>
+          <div
+          style={{
+              backgroundImage: `url(${log})`,
+              minHeight: "100vh",
+              backgroundSize: "cover",
+            }}
+            >
+
+          <Login />
+            </div>
+       </Route>
+        <Route path="/SignUpPage" component={SignUp}>
+        <div
+          style={{
+              backgroundImage: `url(${log})`,
+              minHeight: "100vh",
+              backgroundSize: "cover",
+            }}
+            >
+        <SignUp />
+        </div>
+        </Route>
         <Route path="/search">
           <SearchResults />
         </Route>

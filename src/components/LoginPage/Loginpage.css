@@ -1,0 +1,34 @@
+/* @media only screen and (min-width: 770px) {
+  .form {
+    border: black 1px solid;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
+    border-radius: 10px;
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .form {
+    border: black 1px solid;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+  }
+} */
+
+#exampleInputEmail1 {
+  width: 80%;
+  margin-left: 0px;
+}
+#exampleInputPassword1 {
+  width: 80%;
+  margin-left: 0px;
+}
+button {
+  margin-top: 10px;
+}
