@@ -5,13 +5,15 @@ import { HomePage } from "./pages/HomePage";
 import { UserLocationContext } from "./context/user-location";
 import { HotelInfo } from "./pages/HoteInfo";
 import harshImage from "./harshFood.jpg";
-import log from "./log.jpeg"
+import log from "./new12.jpg"
 import { SearchResults } from "./pages/SearchResults";
 import { Payment } from "./pages/Payment";
 import Tabs from "./pages/Payment/Tabs/Tabs";
 import {Summary} from "./pages/Summary";
 import Login from "./components/LoginPage/LoginPage";
 import SignUp  from "./components/SignUpPage/SignUpPage";
+import {MainPage} from "./pages/MainPage";
+
 
 function App() {
   const [userLocation, setUserLocation] = useState({});
@@ -42,6 +44,17 @@ function App() {
           <Login />
             </div>
        </Route>
+        <Route path="/main">
+         <div
+            style={{
+              backgroundImage: `url(${harshImage})`,
+              minHeight: "100vh",
+              backgroundSize: "cover",
+            }}
+          >
+            <MainPage/>
+        </div>
+       </Route> 
         <Route path="/SignUpPage" component={SignUp}>
         <div
           style={{

@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
 import { getNameFromZomato } from "../../services/zomato.service";
 import style from "../../components/SearchForm/SearchForm.module.css";
-import NavBar from "../../components/Navbar";
+import Nav from "../../components/Nav";
 import  "./search.css";
 
 import ItemsCarousel from 'react-items-carousel';
@@ -39,7 +39,7 @@ export function SearchResults() {
 
   return (
     <>
-      <NavBar />
+      <Nav />
       <div className="slider">
       <div style={{ padding: `0 ${chevronWidth}px` }}>
       <ItemsCarousel

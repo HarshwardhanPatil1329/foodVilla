@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "../../components/Navbar";
+import Nav from "../../components/Nav";
 import Tabs from "./Tabs/Tabs";
 
 export function Payment() {
   return (
     <>
-      <NavBar />
+      <Nav />
       <Tabs />
     </>
   );

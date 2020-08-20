@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getHotelInfoFromId } from "../../services/zomato.service";
-import NavBar from "../../components/Navbar";
+import Nav from "../../components/Nav";
 // import data from "./data.json"
 import "./Hotel.css"
 import {Data} from "./Demo3"; 
@@ -18,7 +18,7 @@ export function HotelInfo() {
 
   return (
     <>
-      <NavBar/>
+      <Nav/>
       {/* {docs.name} <img src={docs.featured_image} alt="" />
       <a href={docs.photos_url}>Click here for photos</a> */}
       <div className="head">

@@ -7,9 +7,7 @@ export function HomePage() {
   return (
     <>
       <NavBar />
-      <div className={style.SearchForm}>
-        <SearchForm />
-      </div>
+     
     </>
   );
 }

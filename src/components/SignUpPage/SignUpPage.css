@@ -1,9 +1,8 @@
-/* 
 @media only screen and (min-width: 770px) {
-  Form {
-    width: 50%;
+  #formSignup {
+    width: 30%;
     margin-top: 20px;
-    margin-left: 25%;
+    margin-left: 20%;
     border: solid 2px black;
     border-radius: 10px;
     padding: 10px;
@@ -11,8 +10,8 @@
   }
 }
 @media only screen and (max-width: 770px) {
-  Form {
-    width: 90%;
+  #formSignup {
+    width: 70%;
     margin-top: 20px;
     margin-left: 5%;
     border: solid 2px black;
@@ -20,16 +19,28 @@
     padding: 10px;
     background-color: white;
   }
-} */
-h3 {
-  margin-left: 30%;
 }
-input {
+.headNameSignup {
+  font-size: 20px;
+  font-weight: bold;
+}
+.mainNameSignup {
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+}
+.buttonSignup {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgb(216, 183, 35);
+  font-weight: bold;
+  display: block;
+}
+.inputSignup {
   width: 80%;
-}
-h6 {
-  display: block;
-}
-label {
-  display: block;
+  margin-left: 0px;
+  padding: 10px;
+  border-radius: 5px;
 }
