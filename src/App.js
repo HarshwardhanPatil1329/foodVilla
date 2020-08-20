@@ -76,7 +76,14 @@ function App() {
           <Payment />
         </Route>
         <Route path="/summary">
-          <Summary />
+        <div
+            style={{
+              backgroundImage: `url(${harshImage})`,
+              minHeight: "100vh",
+              backgroundSize: "cover",
+            }}
+          >
+          <Summary /></div>
         </Route>
       </Switch>
     </Router>
